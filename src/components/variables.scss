@@ -1,0 +1,30 @@
+/*
+ * Colors
+ * ========================================================================== */
+
+$black: #4A4A4A;
+$white: #FFFFFF;
+
+/*
+ * Typography
+ * ========================================================================== */
+
+$font-family: 'Roboto', 'myriad-pro', Verdana, Geneva, sans-serif;
+
+/*
+ * Media queries breakpoints
+ * ========================================================================== */
+
+$phone: 480px; /* Extra small screen / phone */
+$tablet: 768px; /* Small screen / tablet */
+$desktop: 992px; /* Medium screen / desktop */
+$wide-desktop: 1200px; /* Large screen / wide desktop */
+
+
+@mixin fill-height {
+  height: 100%;
+}
+
+.fill-height {
+  @include fill-height;
+}
