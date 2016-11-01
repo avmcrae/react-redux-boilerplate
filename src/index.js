@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Page from './components/page/page';
 
 require('./application.scss');
 
 ReactDOM.render(
-  <h3>Hello World</h3>,
+  <Page />,
   document.getElementById('root')
 );
