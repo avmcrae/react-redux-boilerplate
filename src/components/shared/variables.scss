@@ -4,12 +4,15 @@
 
 $black: #4A4A4A;
 $white: #FFFFFF;
+$light-gray: #f0f0f0;
+$dark-gray: #6a737b;
 
 /*
  * Typography
  * ========================================================================== */
 
 $font-family: 'Roboto', 'myriad-pro', Verdana, Geneva, sans-serif;
+$font-gray: #9b9b9b;
 
 /*
  * Media queries breakpoints
@@ -20,11 +23,32 @@ $tablet: 768px; /* Small screen / tablet */
 $desktop: 992px; /* Medium screen / desktop */
 $wide-desktop: 1200px; /* Large screen / wide desktop */
 
+$spacing: 1rem;
+
+/*
+ * Mixins
+ * ========================================================================== */
 
 @mixin fill-height {
   height: 100%;
 }
 
-.fill-height {
-  @include fill-height;
+@mixin large-font {
+  font-size: 20px;
+  color: $black;
+}
+
+@mixin medium-font {
+  font-size: 16px;
+  color: $font-gray;
+}
+
+@mixin small-font {
+  font-size: 13px;
+  color: $font-gray;
+}
+
+@mixin tiny-font {
+  font-size: 11px;
+  color: $font-gray;
 }

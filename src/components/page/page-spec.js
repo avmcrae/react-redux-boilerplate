@@ -6,13 +6,23 @@ import chaiEnzyme from 'chai-enzyme';
 chai.use(chaiEnzyme());
 
 import Page from './page';
+import Nav from '../nav/nav';
 
 describe('Page component', () => {
-  it('should contain header text', () => {
+
+  it('should contain a Nav', () => {
     const page = shallow(<Page />);
 
-    const header = page.find('h3');
+    const nav = page.find(Nav);
 
-    expect(header).to.contain.text('Hello World');
+    expect(nav).to.be.present();
+  });
+
+  it('has a body', () => {
+    const FakeComponent = () => <div></div>;
+    const page = shallow(<Page body={<FakeComponent />} />);
+    const content = page.find(FakeComponent);
+
+    expect(content).to.be.present();
   });
 });

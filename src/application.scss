@@ -1,1 +1,8 @@
-@import 'components/variables';
+@import 'components/shared/variables';
+@import 'components/shared/grid';
+@import 'components/shared/reset';
+@import 'components/shared/link';
+@import 'components/shared/header';
+@import 'components/shared/content';
+
+@import 'components/nav/nav';
