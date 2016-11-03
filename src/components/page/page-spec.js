@@ -18,9 +18,9 @@ describe('Page component', () => {
     expect(nav).to.be.present();
   });
 
-  it('has a body', () => {
+  it('has content', () => {
     const FakeComponent = () => <div></div>;
-    const page = shallow(<Page body={<FakeComponent />} />);
+    const page = shallow(<Page content={<FakeComponent />} />);
     const content = page.find(FakeComponent);
 
     expect(content).to.be.present();

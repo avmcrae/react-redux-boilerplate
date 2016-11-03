@@ -4,14 +4,21 @@ import Nav from '../nav/nav';
 class Page extends React.Component {
 
   render() {
-    const {body} = this.props;
+    const {content} = this.props;
     return (
       <div className="row">
         <Nav />
-        {body}
+        {content}
       </div>
     );
   }
 }
+
+Page.propTypes = {
+  content: React.PropTypes.oneOfType([
+    React.PropTypes.func,
+    React.PropTypes.object
+  ]).isRequired
+};
 
 export default Page;
