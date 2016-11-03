@@ -12,3 +12,7 @@
 ### Mocha
 ### Chai
 ### Enzyme
+
+## Linting
+
+### ESLint
